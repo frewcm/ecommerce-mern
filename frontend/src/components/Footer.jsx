@@ -4,9 +4,9 @@ import logo from "../../public/images/e-logo.png";
 
 function Footer() {
   return (
-    <div className="flex flex-col w-full h-96 bg-green-900 text-white">
-      <div className="grid grid-cols-5 gap-5 mt-10">
-        <div className="flex flex-col space-y-2">
+    <div className="flex flex-col w-full bg-green-900 text-white">
+      <div className="grid grid-cols-2 gap-2 md:grid md:grid-cols-3 lg:grid lg:grid-cols-5 lg:gap-5 mt-10 mb-10">
+        <div className="flex flex-col items-center justify-center space-y-2">
           <Link className="text-green-900 text-lg ml-5 lg:ml-20" to="/">
             <div className="flex flex-col items-center justify-center rounded-full">
               <img className="w-28 " src={logo} alt="logo image" />
@@ -14,7 +14,7 @@ function Footer() {
             </div>
           </Link>
         </div>
-        <div className="flex flex-col space-y-2">
+        <div className="m-3 flex flex-col items-center space-y-2 lg:items-start">
           <p className="font-bold text-xl">Our Shop</p>
           <p className="text-gray-300">All Products</p>
           <p className="text-gray-300">The Weekend Boot</p>
@@ -23,14 +23,14 @@ function Footer() {
           <p className="text-gray-300">Rain Coats</p>
           <p className="text-gray-300">Accessories</p>
         </div>
-        <div className="flex flex-col space-y-2">
+        <div className="m-3 flex flex-col items-center space-y-2 lg:items-start">
           <p className="font-bold text-xl">Help</p>
           <p className="text-gray-300">Size Guides</p>
           <p className="text-gray-300">Shipping Information</p>
           <p className="text-gray-300">Refund Policy</p>
           <p className="text-gray-300">Wear,Care and FAQ</p>
         </div>
-        <div className="flex flex-col space-y-2">
+        <div className="m-3 flex flex-col items-center space-y-2 lg:items-start">
           <p className="font-bold text-xl">About US</p>
           <p className="text-gray-300">Values</p>
           <p className="text-gray-300">Terms Of Service</p>
@@ -38,7 +38,7 @@ function Footer() {
           <p className="text-gray-300">We're Hiring</p>
           <p className="text-gray-300">footer</p>
         </div>
-        <div className="flex flex-col space-y-2">
+        <div className="m-3 flex flex-col items-center space-y-2 lg:items-start">
           <p className="font-bold text-xl">Get In TOuch</p>
           <p className="text-gray-300">Call US at +251-943-946-006</p>
           <p className="text-gray-300">Email</p>

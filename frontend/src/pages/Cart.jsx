@@ -1,5 +1,5 @@
 import { useShoppingCart } from "../store/ContextStore";
-import { useQuery } from "@tanstack/react-query";
+import { useMutation, useQuery } from "@tanstack/react-query";
 import { getProducts } from "../axios/Axios";
 import { FormatCurrency } from "../utilities/FormatCurrency";
 import CartItem from "../components/CartItem";
@@ -29,7 +29,7 @@ function Cart() {
         <div className="">
           {cartItems.length > 0 && (
             <p className="text-2xl mr-10">
-              Total:
+              Total:-
               {FormatCurrency(
                 cartItems.reduce((total, cartItem) => {
                   const product = data?.find((x) => x.id === cartItem.id);

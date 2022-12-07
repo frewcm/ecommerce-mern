@@ -6,7 +6,7 @@ import Main from "../components/Main";
 
 function Home() {
   return (
-    <div>
+    <div className="snap-y snap-mandatory overflow-auto">
       <Intro />
       <Ad1 />
       <Main />

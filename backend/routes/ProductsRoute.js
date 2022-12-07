@@ -1,5 +1,5 @@
-import express from "express";
-import data from "../Data.js";
+const express = require("express");
+const data = require("../Data.js");
 
 const router = express.Router();
 
@@ -35,4 +35,4 @@ router.get("/products/:id", async (req, res) => {
   }
 });
 
-export default router;
+module.exports = router;

@@ -8,6 +8,7 @@ import Cart from "./pages/Cart";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { ShoppingCartProvider } from "./store/ContextStore";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   const queryClient = new QueryClient();
@@ -15,6 +16,7 @@ function App() {
     <ShoppingCartProvider>
       <QueryClientProvider client={queryClient}>
         <Router>
+          <ScrollToTop />
           <div>
             <Header />
             <Routes>
