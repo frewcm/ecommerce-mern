@@ -4,10 +4,11 @@ import { getProducts } from "../axios/Axios";
 import { FormatCurrency } from "../utilities/FormatCurrency";
 import CartItem from "../components/CartItem";
 import { Link } from "react-router-dom";
+import data from "../data";
 
 function Cart() {
   const { cartItems } = useShoppingCart();
-  const { data } = useQuery(["products"], getProducts);
+  // const { data } = useQuery(["products"], getProducts);
 
   return (
     <div className="flex flex-col w-full h-screen">
@@ -32,7 +33,9 @@ function Cart() {
               Total:-
               {FormatCurrency(
                 cartItems.reduce((total, cartItem) => {
-                  const product = data?.find((x) => x.id === cartItem.id);
+                  const product = data.products.find(
+                    (x) => x.id === cartItem.id
+                  );
                   return total + (product?.price || 0) * cartItem.quantity;
                 }, 0)
               )}

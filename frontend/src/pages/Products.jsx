@@ -40,7 +40,7 @@ function Products() {
 
       <div className="flex">
         <img
-          className="w-[440px] object-cover"
+          className="lg:w-[440px] md:w-[300px] w-[170px] object-cover"
           src={product.image}
           alt={product.title}
         />
