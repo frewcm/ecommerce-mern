@@ -10,9 +10,9 @@ function TotalCart({ id, quantity }) {
   const product = data.products.find((x) => x.id === id);
   if (product == null) return null;
   return (
-    <div className="flex border-gray-200 border-2 mb-2 lg:w-[600px] md:w-[500px] w-[400px] justify-between">
+    <div className="flex border-gray-200 border-2 mb-2 lg:w-[600px] md:w-[500px] w-[300px] justify-between">
       <div className="flex items-center ">
-        <img className="w-12" src={product.image} alt={product.name} />
+        <img className="" src={product.image} alt={product.name} />
         <div className="flex flex-col">
           <p>
             {product.name}

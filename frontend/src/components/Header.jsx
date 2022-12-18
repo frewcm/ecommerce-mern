@@ -16,7 +16,7 @@ function Header() {
         </div>
       </Link>
 
-      <Link className="flex mr-24" to="/cart">
+      <Link className="flex mr-10 lg:mr-24" to="/cart">
         <BsCart4 className="text-green-900" size={25} />
 
         <p className="bg-red-500 text-white text-xs  mb-2 text-center rounded-full w-6">

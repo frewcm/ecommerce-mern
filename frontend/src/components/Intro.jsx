@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 function Intro() {
   return (
-    <div className="bg-center bg-cover bg-[url('../../public/images/shopImage.webp')] h-screen w-full">
+    <div className="bg-center bg-cover bg-[url('../../public/images/shop.jpg')] h-screen w-full">
       <div className="h-screen w-full bg-green-700 bg-opacity-40 flex items-center justify-center">
         <div className="flex flex-col justify-center items-center text-gray-50">
           <p className="text-2xl text-green-100">Welcome.</p>
